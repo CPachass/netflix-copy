@@ -1,0 +1,43 @@
+@use "variables" as v;
+
+// Mixins para media querys
+
+@mixin telefono {
+    @media (min-width: v.$telefono) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+@mixin desktop_xl {
+    @media (min-width: v.$desktop_xl) {
+        @content;
+    }
+}
+
+// Mixins para grid
+
+@mixin grid($num_columnas, $separacion) {
+    display: grid;
+    grid-template-columns: repeat($num_columnas, 1fr);
+    gap: $separacion;
+}
+
+// Mixins para animaciones
+
+@mixin desplegar_texto {
+    -webkit-animation: tracking-in-expand 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    opacity: 1; 
+}

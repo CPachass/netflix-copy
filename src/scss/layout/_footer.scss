@@ -1,0 +1,50 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.footer {
+    width: 95%;
+    max-width: 100rem;
+    height: auto;
+    margin: 0 auto;
+    padding: 4rem 0;
+    @include m.desktop { padding: 8rem 0 4rem 0; }
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.footer-icons {
+    display: flex;
+    column-gap: 2rem;
+    .icon-link {
+        font-size: 1.5rem;
+        @include m.telefono { font-size: 2rem; }
+    }
+}
+.lista-ayuda {
+    list-style: none;
+    @include m.grid(2, 2rem);
+    @include m.telefono {
+        @include m.grid(3, 2rem);
+    }
+    @include m.tablet {
+        @include m.grid(4, 2rem);
+    }
+    a { 
+        font-size: 1.3rem; 
+        color: v.$gris;
+    }
+}
+.footer-codigoservicio {
+    width: max-content;
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: v.$gris;
+    border: 1px solid v.$gris;
+    border-radius: 1%;
+}
+.copyright {
+    font-size: 1.1rem;
+    color: v.$gris;
+    &::before { content: '© '; }
+}

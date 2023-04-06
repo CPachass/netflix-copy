@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Netlix</title>
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=MedievalSharp&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <!--font-awesome-->
+        <script src="https://kit.fontawesome.com/8951c38389.js" crossorigin="anonymous"></script>
+        <!--styles-->
+        <link rel="stylesheet" href="build/css/app.css">
+        <!--icon-->
+        <link rel="icon" href="build/img/logo_icon.ico">
+    </head>
+    <body>
+        <header class="header">
+            <div class="navegacion">
+                <h2 class="navegacion_logo">Netflix</h2>
+                <nav class="navegacion-barra">
+                    <a class="navegacion-link" href="#">Inicio</a>
+                    <a class="navegacion-link" href="#">Series</a>
+                    <a class="navegacion-link" href="#">Películas</a>
+                    <a class="navegacion-link" href="#">Novedades populares</a>
+                    <a class="navegacion-link" href="#">Mi lista</a>
+                    <a class="navegacion-link" href="#">Explora por idiomas</a>
+                </nav>
+            </div><!--navegacion-->
+            <div class="navegacion-extra">
+                <div class="navegacion-buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <p>Niños</p>
+                <div class="navegacion-notificaciones">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <div class="navegacion-perfil">
+                    <picture>
+                        <source srcset="build/img/profile-photo.avif" type="image/avif">
+                        <source srcset="build/img/profile-photo.webp" type="image/webp">
+                        <img loading="lazy"  width="200" height="300" src="build/img/profile-photo.jpg" alt="profile photo">
+                    </picture>
+                    <div class="navegacion-perfil-desplegar">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div><!--.navegacion-extra-->
+        </header><!--.header-->
+
+        <section class="presentacion-serie">
+            <video autoplay muted loop>
+                <source src="video/test_video.mp4" type="video/mp4">
+                <source src="video/test_video.ogg" type="video/ogg">
+                <source src="video/test_video.webm" type="video/webm">
+            </video>
+            <div class="overlay serie-descripcion">
+                <h1>La guerra de la devastación</h1>
+                <p>N.º 1 en series hoy</p>
+                <p class="descripcion">La guerra en las tierras intermedias ha comenzado, los semidioses luchan por hacerse con el anillo del Elden.</p>
+                <div class="botones">
+                    <button type="boton" class="boton boton-transparente-blanco">
+                        <i class="fa-solid fa-play"></i>
+                        Reproducir
+                    </button>
+                    <button type="boton" class="boton boton-transparente-gris">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Más información
+                    </button>
+                </div>
+            </div><!--.overlay-->
+        </section><!--presentacion-serie-->
+
+        <section class="recomendaciones">
+            <div class="recomendaciones-encabezado">
+                <h3>Continuar viendo contenido de Obama y Biden 
+                    <span class="texto-oculto">
+                        Explorar todos
+                        <i class="fa-solid fa-caret-down"></i>
+                    </span></h3>
+                <div class="indicadores-paginador"></div>
+            </div>
+        </section><!-- carrusel -->
+
+        <section class="recomendaciones">
+            <div class="recomendaciones-encabezado">
+                <h3>Destacados para Obama y Biden
+                    <span class="texto-oculto">
+                        Explorar todos
+                        <i class="fa-solid fa-caret-down"></i>
+                    </span></h3>
+                <div class="indicadores-paginador"></div>
+            </div>
+        </section><!-- carrusel -->
+
+        <section class="recomendaciones">
+            <div class="recomendaciones-encabezado">
+                <h3>Porque viste Arcane
+                    <span class="texto-oculto">
+                        Explorar todos
+                        <i class="fa-solid fa-caret-down"></i>
+                    </span></h3>
+                <div class="indicadores-paginador"></div>
+            </div>
+        </section><!-- carrusel -->
+
+        <section class="recomendaciones">
+            <div class="recomendaciones-encabezado">
+                <h3>Películas aclamadas por la crítica
+                    <span class="texto-oculto">
+                        Explorar todos
+                        <i class="fa-solid fa-caret-down"></i>
+                    </span></h3>
+                <div class="indicadores-paginador"></div>
+            </div>
+        </section><!-- carrusel -->
+
+        <footer class="footer">
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/" class="icon-link" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="icon-link" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/home" class="icon-link" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.twitch.tv/" class="icon-link" target="_blank">
+                    <i class="fa-brands fa-twitch"></i>
+                </a>
+                <a href="https://www.youtube.com/" class="icon-link" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div><!--.footer-icons-->
+            <ul class="lista-ayuda">
+                <li><a href="#">Audio descriptivo</a></li>
+                <li><a href="#">Centro de ayuda</a></li>
+                <li><a href="#">Tarjetas de regalo</a></li>
+                <li><a href="#">Prensa</a></li>
+                <li><a href="#">Relaciones con inversionistas</a></li>
+                <li><a href="#">Empleo</a></li>
+                <li><a href="#">Tienda de Netflix</a></li>
+                <li><a href="#">Términos de uso</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Avisos legales</a></li>
+                <li><a href="#">Preferencias de cookies</a></li>
+                <li><a href="#">Información corporativa</a></li>
+                <li><a href="#">Contáctanos</a></li>
+            </ul><!--.lista-ayuda-->
+            <button type="button" class="footer-codigoservicio">Código de servicio</button>
+            <p class="copyright">1997 - 2023 Netflix, Inc.</p>
+        </footer> <!--.footer-->
+
+        <script src="build/js/header.js"></script>
+        <script src="build/js/presentacion_serie.js"></script>
+        <script src="build/js/carousel.js"></script>
+    </body>
+</html>
